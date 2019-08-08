@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"data","l":"Line"},{"p":"io","l":"Loader"},{"p":"<Unnamed>","l":"Main"},{"p":"io","l":"Printer"},{"p":"data","l":"Word"},{"p":"data","l":"WordGroup"}]
