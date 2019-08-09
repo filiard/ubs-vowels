@@ -9,9 +9,9 @@ import java.util.TreeSet;
 
 public class Word {
     /**
-     * Array containing all the setOfVowels to be found. It was assumed the letter 'Y' is not a pure vowel.
+     * Array containing all the vowels to be found. It was assumed the letter 'Y' is not a pure vowel.
      */
-    public static final char[] VOWELS = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+    public static final char[] VOWELS = {'a', 'e', 'i', 'o', 'u'};
     /**
      * String representing the word.
      */
@@ -21,7 +21,7 @@ public class Word {
      */
     private int wordLength;
     /**
-     * Total number of setOfVowels present in the word.
+     * Total number of vowels present in the word.
      */
     private int numberOfVowels;
     /**
@@ -37,7 +37,7 @@ public class Word {
     }
 
     /**
-     * @return Returns total number of setOfVowels in the word.
+     * @return Returns total number of vowels in the word.
      */
     public int getNumberOfVowels() {
         return numberOfVowels;
@@ -61,10 +61,10 @@ public class Word {
     }
 
     /**
-     * Counts all setOfVowels appearing in the word and builds a set of distinct setOfVowels.
+     * Counts all vowels appearing in the word and builds a set of distinct setOfVowels.
      *
-     * @param word data.Word to have setOfVowels counted.
-     * @return Returns number of setOfVowels present in a word.
+     * @param word data.Word to have vowels counted.
+     * @return Returns number of vowels present in a word.
      */
     private int countVowels(String word) {
         for (int i = 0; i < wordLength; i++) {

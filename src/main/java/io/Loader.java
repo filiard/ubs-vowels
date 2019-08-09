@@ -58,10 +58,12 @@ public class Loader {
 
     /**
      * Removes all unwanted characters from the text (special characters, digits).
-     * @return Returns text having only letters and whitespaces.
+     * @return Returns text having only lowercase letters and whitespaces.
      */
     private String sanitizeString() {
-        return fileContents.replaceAll("[^a-zA-Z\\s+]", "");
+        String line = fileContents.replaceAll("[^a-zA-Z\\s+]", "");
+        line=line.toLowerCase();
+        return line;
     }
 
     /**
